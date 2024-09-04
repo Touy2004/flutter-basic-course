@@ -2,10 +2,15 @@ import 'package:code_tutoorial/4/random_cat/lib/home_page.dart';
 import 'package:code_tutoorial/4/random_cat/lib/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+
   runApp(MultiProvider(providers: [
-    ChangeNotifierProvider(create: (_) => CatService()),
+    ChangeNotifierProvider(create: (_) => CatService(prefs)),
   ], child: const MyApp()));
 }
 
