@@ -1,12 +1,15 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class CatService extends ChangeNotifier {
   List<String> catImages = [];
   List<String> favoriteImages = [];
+  SharedPreferences prefs;
 
-  CatService() {
+  CatService(this.prefs) {
     getRandomCatImages();
+    favoriteImages = prefs.getStringList("favorite") ?? [];
   }
 
   void getRandomCatImages() async {
@@ -26,6 +29,7 @@ class CatService extends ChangeNotifier {
     } else {
       favoriteImages.add(catImage);
     }
+    prefs.setStringList("favorite", favoriteImages);
     notifyListeners();
 }
 }
