@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 abstract class IntlHelper {
   /// Supported Languages
   static const Locale en = Locale('en');
-  static const Locale ko = Locale('la');
+  static const Locale ko = Locale('ko');
 
   ///Whether Korean or not
   static bool get isKo => Intl.getCurrentLocale() == ko.languageCode;
