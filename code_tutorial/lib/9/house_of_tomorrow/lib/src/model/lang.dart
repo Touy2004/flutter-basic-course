@@ -1,5 +1,3 @@
-import 'package:house_of_tomorrow/util/helper/intl_helper.dart';
-
 class Lang {
   final String ko;
   final String en;

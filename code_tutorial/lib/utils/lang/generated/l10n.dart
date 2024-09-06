@@ -120,6 +120,16 @@ class S {
     );
   }
 
+  /// `Lao`
+  String get lo {
+    return Intl.message(
+      'Lao',
+      name: 'lo',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Product`
   String get product {
     return Intl.message(
