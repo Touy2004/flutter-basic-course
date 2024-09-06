@@ -1,17 +1,17 @@
 import 'dart:convert';
 import 'dart:developer';
 
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/model/product.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/view/shopping/widget/product_card_grid.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/view/shopping/widget/product_empty.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/bottom_sheet/setting_bottom_sheet.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/button/button.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/cart_button.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/hide_keyboard.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/input_field.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/util/helper/network_helper.dart';
+import 'package:code_tutoorial/utils/lang/generated/l10n.dart';
 import 'package:flutter/material.dart';
-import 'package:house_of_tomorrow/src/model/product.dart';
-import 'package:house_of_tomorrow/src/view/shopping/widget/product_card_grid.dart';
-import 'package:house_of_tomorrow/src/view/shopping/widget/product_empty.dart';
-import 'package:house_of_tomorrow/theme/component/bottom_sheet/setting_bottom_sheet.dart';
-import 'package:house_of_tomorrow/theme/component/button/button.dart';
-import 'package:house_of_tomorrow/theme/component/cart_button.dart';
-import 'package:house_of_tomorrow/theme/component/hide_keyboard.dart';
-import 'package:house_of_tomorrow/theme/component/input_field.dart';
-import 'package:house_of_tomorrow/util/helper/network_helper.dart';
-import 'package:house_of_tomorrow/util/lang/generated/l10n.dart';
 
 class ShoppingView extends StatefulWidget {
   const ShoppingView({super.key});
@@ -54,6 +54,7 @@ class _ShoppingViewState extends State<ShoppingView> {
   void initState() {
     super.initState();
     searchProductList();
+    log(S.current.language.toString());
   }
 
   @override

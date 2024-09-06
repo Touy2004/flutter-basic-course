@@ -48,6 +48,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "ko": MessageLookupByLibrary.simpleMessage("Korean"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "light": MessageLookupByLibrary.simpleMessage("Light"),
+        "lo": MessageLookupByLibrary.simpleMessage("Lao"),
         "noProduct":
             MessageLookupByLibrary.simpleMessage("There is no product."),
         "product": MessageLookupByLibrary.simpleMessage("Product"),

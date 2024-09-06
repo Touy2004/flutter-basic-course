@@ -1,8 +1,8 @@
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/service/theme_service.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/base_dialog.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/button/button.dart';
+import 'package:code_tutoorial/utils/lang/generated/l10n.dart';
 import 'package:flutter/material.dart';
-import 'package:house_of_tomorrow/src/service/theme_service.dart';
-import 'package:house_of_tomorrow/theme/component/base_dialog.dart';
-import 'package:house_of_tomorrow/theme/component/button/button.dart';
-import 'package:house_of_tomorrow/util/lang/generated/l10n.dart';
 
 class CartDeleteDialog extends StatelessWidget {
   const CartDeleteDialog({

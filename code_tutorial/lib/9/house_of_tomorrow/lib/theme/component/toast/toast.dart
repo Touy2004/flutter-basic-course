@@ -1,6 +1,6 @@
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/main.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/toast/toast_builder.dart';
 import 'package:flutter/material.dart';
-import 'package:house_of_tomorrow/main.dart';
-import 'package:house_of_tomorrow/theme/component/toast/toast_builder.dart';
 
 abstract class Toast {
   static void show(

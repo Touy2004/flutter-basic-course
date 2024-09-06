@@ -1,6 +1,6 @@
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/service/theme_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:house_of_tomorrow/src/service/theme_service.dart';
 
 class AssetIcon extends StatelessWidget {
   const AssetIcon(
@@ -17,7 +17,7 @@ class AssetIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SvgPicture.asset(
-      'assets/icons/$icon.svg',
+      'assets/9/icons/$icon.svg',
       width: size,
       height: size,
       colorFilter: ColorFilter.mode(

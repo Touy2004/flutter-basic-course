@@ -120,6 +120,16 @@ class S {
     );
   }
 
+  /// `Lao`
+  String get lo {
+    return Intl.message(
+      'Lao',
+      name: 'lo',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Product`
   String get product {
     return Intl.message(
@@ -318,6 +328,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
     return const <Locale>[
       Locale.fromSubtags(languageCode: 'en'),
       Locale.fromSubtags(languageCode: 'ko'),
+      Locale.fromSubtags(languageCode: 'la'),
     ];
   }
 

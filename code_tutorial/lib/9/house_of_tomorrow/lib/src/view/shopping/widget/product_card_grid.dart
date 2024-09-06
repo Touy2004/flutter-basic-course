@@ -1,9 +1,8 @@
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/model/product.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/view/shopping/widget/product_card.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/res/layout.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:house_of_tomorrow/src/model/product.dart';
-import 'package:house_of_tomorrow/src/view/shopping/widget/product_card.dart';
-import 'package:house_of_tomorrow/theme/res/layout.dart';
-
 class ProductCardGrid extends StatelessWidget {
   const ProductCardGrid(
     this.productList, {
