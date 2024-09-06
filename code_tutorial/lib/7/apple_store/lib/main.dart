@@ -1,5 +1,6 @@
-import 'package:code_tutoorial/2/create_instragram_screen/lib/home_page.dart';
 import 'package:flutter/material.dart';
+
+import '1-stateful_widgets/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Create Instragram screen',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }
