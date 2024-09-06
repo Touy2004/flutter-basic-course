@@ -1,5 +1,3 @@
-
-
 import 'package:code_tutoorial/9/house_of_tomorrow/lib/util/helper/intl_helper.dart';
 
 class Lang {

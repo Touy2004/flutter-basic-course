@@ -14,4 +14,9 @@ class LangService with ChangeNotifier {
     locale = IntlHelper.isKo ? IntlHelper.en : IntlHelper.ko;
     notifyListeners();
   }
+
+  void toggleLo() {
+    locale = IntlHelper.isLo ? IntlHelper.en : IntlHelper.lo;
+    notifyListeners();
+  }
 }
