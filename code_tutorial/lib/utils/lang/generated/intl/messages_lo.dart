@@ -1,5 +1,5 @@
 // DO NOT EDIT. This is code generated via package:intl/generate_localized.dart
-// This is a library that provides messages for a la locale. All the
+// This is a library that provides messages for a lo locale. All the
 // messages from the main program should be duplicated here with the same
 // function name.
 
@@ -18,7 +18,7 @@ final messages = new MessageLookup();
 typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 
 class MessageLookup extends MessageLookupByLibrary {
-  String get localeName => 'la';
+  String get localeName => 'lo';
 
   static String m0(n) => "${n} ລາຍການ";
 
@@ -45,7 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "description": MessageLookupByLibrary.simpleMessage("ລາຍລະອຽດ"),
         "en": MessageLookupByLibrary.simpleMessage("ພາສາອັງກິດ"),
         "items": m0,
-        "ko": MessageLookupByLibrary.simpleMessage("ພາສາລາວ"),
+        "ko": MessageLookupByLibrary.simpleMessage("ພາສາKo"),
         "language": MessageLookupByLibrary.simpleMessage("ພາສາ"),
         "light": MessageLookupByLibrary.simpleMessage("ແສງ"),
         "lo": MessageLookupByLibrary.simpleMessage("ລາວ"),

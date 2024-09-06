@@ -34,6 +34,12 @@ class SettingBottomSheet extends StatelessWidget {
             subtitle: IntlHelper.isKo ? S.current.ko : S.current.en,
             onPressed: langService.toggleLang,
           ),
+          Tile(
+            icon: 'language',
+            title: S.current.language,
+            subtitle: IntlHelper.isLo ? S.current.lo : S.current.en,
+            onPressed: langService.toggleLo,
+          ),
         ],
       ),
     );
