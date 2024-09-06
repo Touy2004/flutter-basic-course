@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "129054512410",
+    "project_id": "flutter-klab",
+    "storage_bucket": "flutter-klab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129054512410:android:1150af5704d6356df408a3",
+        "android_client_info": {
+          "package_name": "com.example.code_tutoorial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAypWVoo605bu8VhfTHiS3sT01wEhlGryQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
