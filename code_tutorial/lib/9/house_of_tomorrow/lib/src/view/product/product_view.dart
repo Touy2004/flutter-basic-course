@@ -1,15 +1,15 @@
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/model/cart_item.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/model/product.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/service/cart_service.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/view/product/widget/product_color_preview.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/view/product/widget/product_desc.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/view/product/widget/product_layout.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/cart_button.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/color_picker.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/pop_button.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/toast/toast.dart';
+import 'package:code_tutoorial/utils/lang/generated/l10n.dart';
 import 'package:flutter/material.dart';
-import 'package:house_of_tomorrow/src/model/cart_item.dart';
-import 'package:house_of_tomorrow/src/model/product.dart';
-import 'package:house_of_tomorrow/src/service/cart_service.dart';
-import 'package:house_of_tomorrow/src/view/product/widget/product_color_preview.dart';
-import 'package:house_of_tomorrow/src/view/product/widget/product_desc.dart';
-import 'package:house_of_tomorrow/src/view/product/widget/product_layout.dart';
-import 'package:house_of_tomorrow/theme/component/cart_button.dart';
-import 'package:house_of_tomorrow/theme/component/color_picker.dart';
-import 'package:house_of_tomorrow/theme/component/pop_button.dart';
-import 'package:house_of_tomorrow/theme/component/toast/toast.dart';
-import 'package:house_of_tomorrow/util/lang/generated/l10n.dart';
 import 'package:provider/provider.dart';
 
 import 'widget/product_bottom_sheet.dart';

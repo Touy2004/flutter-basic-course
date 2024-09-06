@@ -1,5 +1,5 @@
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/res/layout.dart';
 import 'package:flutter/material.dart';
-import 'package:house_of_tomorrow/theme/res/layout.dart';
 
 class ProductLayout extends StatelessWidget {
   const ProductLayout({

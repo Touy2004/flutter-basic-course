@@ -79,6 +79,7 @@ flutter:
   assets:
     - assets/2/images/
     - assets/8/icons/
+    - assets/9/icons/
     # - assets/images/logo.png
     # - images/a_dot_ham.jpeg
 

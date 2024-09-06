@@ -1,10 +1,10 @@
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/service/lang_service.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/service/theme_service.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/bottom_sheet/base_bottom_sheet.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/component/tile.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/util/helper/intl_helper.dart';
+import 'package:code_tutoorial/utils/lang/generated/l10n.dart';
 import 'package:flutter/material.dart';
-import 'package:house_of_tomorrow/src/service/lang_service.dart';
-import 'package:house_of_tomorrow/src/service/theme_service.dart';
-import 'package:house_of_tomorrow/theme/component/bottom_sheet/base_bottom_sheet.dart';
-import 'package:house_of_tomorrow/theme/component/tile.dart';
-import 'package:house_of_tomorrow/util/helper/intl_helper.dart';
-import 'package:house_of_tomorrow/util/lang/generated/l10n.dart';
 import 'package:provider/provider.dart';
 
 class SettingBottomSheet extends StatelessWidget {
@@ -30,7 +30,7 @@ class SettingBottomSheet extends StatelessWidget {
           Tile(
             icon: 'language',
             title: S.current.language,
-            subtitle: IntlHelper.isKo ? S.current.ko : S.current.en,
+            subtitle: IntlHelper.isLa ? S.current.lo : S.current.en,
             onPressed: langService.toggleLang,
           ),
         ],

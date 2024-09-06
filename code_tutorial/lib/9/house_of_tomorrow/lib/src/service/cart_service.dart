@@ -1,3 +1,5 @@
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/model/cart_item.dart';
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/util/helper/immutable_helper.dart';
 import 'package:flutter/material.dart';
 
 class CartService with ChangeNotifier {

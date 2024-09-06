@@ -1,3 +1,6 @@
+import 'dart:developer';
+
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/util/helper/intl_helper.dart';
 import 'package:flutter/material.dart';
 
 class LangService with ChangeNotifier {
@@ -10,7 +13,10 @@ class LangService with ChangeNotifier {
 
   /// 언어 변경
   void toggleLang() {
-    locale = IntlHelper.isKo ? IntlHelper.en : IntlHelper.ko;
+    locale = IntlHelper.isLa ? IntlHelper.en : IntlHelper.lo;
+
     notifyListeners();
+    log(locale.toString());
+    log(const Locale('la').languageCode.toString());
   }
 }

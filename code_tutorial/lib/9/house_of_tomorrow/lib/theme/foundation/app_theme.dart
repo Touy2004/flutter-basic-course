@@ -1,5 +1,5 @@
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/theme/res/typo.dart';
 import 'package:flutter/material.dart';
-import 'package:house_of_tomorrow/theme/res/typo.dart';
 
 part 'app_color.dart';
 part 'app_deco.dart';

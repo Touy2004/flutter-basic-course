@@ -1,6 +1,6 @@
+import 'package:code_tutoorial/9/house_of_tomorrow/lib/src/service/theme_service.dart';
+import 'package:code_tutoorial/utils/lang/generated/l10n.dart';
 import 'package:flutter/material.dart';
-import 'package:house_of_tomorrow/src/service/theme_service.dart';
-import 'package:house_of_tomorrow/util/lang/generated/l10n.dart';
 
 class ProductEmpty extends StatelessWidget {
   const ProductEmpty({super.key});
