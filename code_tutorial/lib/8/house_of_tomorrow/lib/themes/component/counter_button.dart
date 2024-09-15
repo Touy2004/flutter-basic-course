@@ -1,0 +1,73 @@
+import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/services/theme_service.dart';
+import 'package:code_tutoorial/8/house_of_tomorrow/lib/themes/component/asset_icon.dart';
+import 'package:flutter/material.dart';
+
+class CounterButton extends StatelessWidget {
+  const CounterButton({
+    super.key,
+    required this.count,
+    required this.onChanged,
+  });
+
+  final int count;
+  final void Function(int count) onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    bool isMinusActive = count > 1;
+    return Wrap(
+      crossAxisAlignment: WrapCrossAlignment.center,
+      spacing: 16,
+      children: [
+        /// Minus
+        GestureDetector(
+          onTap: () {
+            if (!isMinusActive) return;
+            onChanged(count - 1);
+          },
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 222),
+            decoration: BoxDecoration(
+              color: context.color.surface,
+              boxShadow: isMinusActive ? context.deco.shadow : null,
+              borderRadius: BorderRadius.circular(99),
+            ),
+            padding: const EdgeInsets.all(8),
+            child: AssetIcon(
+              'minus',
+              color: isMinusActive
+                  ? context.color.primary
+                  : context.color.inactive,
+            ),
+          ),
+        ),
+
+        /// Counter
+        Text(
+          '$count',
+          style: context.typo.headline4.copyWith(
+            fontWeight: context.typo.semiBold,
+          ),
+        ),
+
+        /// Plus
+        GestureDetector(
+          onTap: () => onChanged(count + 1),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 222),
+            decoration: BoxDecoration(
+              color: context.color.surface,
+              boxShadow: context.deco.shadow,
+              borderRadius: BorderRadius.circular(99),
+            ),
+            padding: const EdgeInsets.all(8),
+            child: AssetIcon(
+              'plus',
+              color: context.color.primary,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}

@@ -5,9 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class ThemeService with ChangeNotifier {
-  ThemeService({
-    AppTheme? theme,
-  }) : theme = theme ?? LightTheme();
+  ThemeService({AppTheme? theme}) : theme = theme ?? LightTheme();
   AppTheme theme;
 
   void toggleTheme() {

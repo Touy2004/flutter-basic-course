@@ -1,5 +1,6 @@
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/model/product.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/views/shopping/widget/product_card.dart';
+import 'package:code_tutoorial/8/house_of_tomorrow/lib/themes/res/layout.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
@@ -14,12 +15,11 @@ class ProductCardGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MasonryGridView.count(
-      crossAxisCount: 2,
-      //  context.layout(
-      // 2,
-      // tablet: 3,
-      // desktop: 4,
-      // ),
+      crossAxisCount: context.layout(
+        2,
+        tablet: 3,
+        desktop: 4,
+      ),
       mainAxisSpacing: 24,
       crossAxisSpacing: 16,
       padding: const EdgeInsets.symmetric(

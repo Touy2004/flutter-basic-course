@@ -1,5 +1,5 @@
-import 'lang.dart';
-import 'product_color.dart';
+import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/model/lang.dart';
+import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/model/product_color.dart';
 
 class Product {
   final Lang name;

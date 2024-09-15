@@ -1,3 +1,4 @@
+import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/services/cart_service.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/services/lang_service.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/services/theme_service.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/views/shopping/shopping_view.dart';
@@ -16,6 +17,9 @@ void main() {
       ChangeNotifierProvider(
         create: (context) => LangService(),
       ),
+      ChangeNotifierProvider(
+        create: (context) => CartService(),
+      ),
     ],
     child: const MyApp(),
   ));
@@ -23,10 +27,18 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
+  static final GlobalKey<NavigatorState> navigatorKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      navigatorKey: navigatorKey,
+      builder: (context, child) {
+        return Overlay(
+          initialEntries: [
+            OverlayEntry(builder: (context) => child!),
+          ],
+        );
+      },
       debugShowCheckedModeBanner: false,
       localizationsDelegates: const [
         S.delegate,

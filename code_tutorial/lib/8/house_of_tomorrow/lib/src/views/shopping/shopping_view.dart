@@ -7,6 +7,7 @@ import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/views/shopping/widget
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/views/shopping/widget/product_empty.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/themes/component/bottom_sheet/setting_bottom_sheet.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/themes/component/button/button.dart';
+import 'package:code_tutoorial/8/house_of_tomorrow/lib/themes/component/cart_button.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/themes/component/hide_keyboard.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/themes/component/input_field.dart';
 import 'package:code_tutoorial/utils/helper/network_helper.dart';
@@ -79,6 +80,7 @@ class _ShoppingViewState extends State<ShoppingView> {
                 icon: 'option',
                 type: ButtonType.flat,
               ),
+              const CartButton()
             ],
           ),
           // backgroundColor: context.color.surface,
@@ -105,7 +107,7 @@ class _ShoppingViewState extends State<ShoppingView> {
                     Button(
                       onPressed: searchProductList,
                       icon: 'search',
-                    )
+                    ),
                   ],
                 ),
               ),
