@@ -5,7 +5,9 @@ abstract class IntlHelper {
   /// Supported Languages
   static const Locale en = Locale('en');
   static const Locale ko = Locale('ko');
+
   static const Locale lo = Locale('lo');
+
 
   ///Whether Korean or not
   static bool get isKo => Intl.getCurrentLocale() == ko.languageCode;
