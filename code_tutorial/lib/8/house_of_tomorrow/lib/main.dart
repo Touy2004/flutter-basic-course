@@ -1,7 +1,6 @@
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/services/cart_service.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/services/lang_service.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/services/theme_service.dart';
-import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/views/shopping/shopping_view.dart';
 import 'package:code_tutoorial/utils/lang/generated/l10n.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/utils/route_path.dart';
 import 'package:flutter/material.dart';

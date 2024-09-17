@@ -1,7 +1,6 @@
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/model/cart_item.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/model/product.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/services/cart_service.dart';
-import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/services/theme_service.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/views/product/widget/product_bottom_sheet.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/views/product/widget/product_color_preview.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/views/product/widget/product_desc.dart';

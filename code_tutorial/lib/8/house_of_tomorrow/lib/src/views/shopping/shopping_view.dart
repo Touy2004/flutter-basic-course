@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:developer';
 
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/model/product.dart';
-import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/views/shopping/widget/product_card.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/views/shopping/widget/product_card_grid.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/src/views/shopping/widget/product_empty.dart';
 import 'package:code_tutoorial/8/house_of_tomorrow/lib/themes/component/bottom_sheet/setting_bottom_sheet.dart';
