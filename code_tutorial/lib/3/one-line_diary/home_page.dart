@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
                   focusedDay: selectedDate,
                   calendarFormat: calendarFormat,
                   onFormatChanged: (format) {
-// Change calendar format
+                    // Change calendar format
                     setState(() {
                       calendarFormat = format;
                     });
@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                       : ListView.separated(
                           itemCount: diaryList.length,
                           itemBuilder: (context, index) {
-// Show in reverse order
+                            // Show in reverse order
                             int i = diaryList.length - index - 1;
                             Diary diary = diaryList[i];
                             return ListTile(

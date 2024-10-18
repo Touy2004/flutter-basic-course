@@ -1,6 +1,5 @@
+import 'package:code_tutoorial/7/apple_store/lib/3-provider/home_page.dart';
 import 'package:flutter/material.dart';
-
-import '1-stateful_widgets/home_page.dart';
 
 void main() {
   runApp(const MyApp());

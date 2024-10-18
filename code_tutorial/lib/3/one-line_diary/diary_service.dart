@@ -1,45 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
-
-// class Diary {
-//   String text;
-//   DateTime createdAt;
-//   Diary({required this.text, required this.createdAt});
-// }
-
-// class DiaryService extends ChangeNotifier {
-//   List<Diary> diaryList = [];
-//   List<Diary> getByDate(DateTime date) {
-//     return diaryList
-//         .where((diary) => isSameDay(date, diary.createdAt))
-//         .toList();
-//   }
-
-//   void create(String text, DateTime selectDate) {
-//     DateTime now = DateTime.now();
-
-//     DateTime createdAt = DateTime(selectDate.year, selectDate.month,
-//         selectDate.day, now.hour, now.minute, now.second);
-
-//     Diary diary = Diary(text: text, createdAt: createdAt);
-//     diaryList.add(diary);
-//     notifyListeners();
-//   }
-
-//   void update(DateTime createdAt, String newContent) {
-//     Diary diary = diaryList.firstWhere((diary) => diary.createdAt == createdAt);
-
-//     diary.text = newContent;
-//     notifyListeners();
-//   }
-
-//   void delete(DateTime createAt) {
-//     diaryList.removeWhere((diary) => diary.createdAt == createAt);
-
-//     notifyListeners();
-//   }
-// }
-
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 

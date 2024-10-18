@@ -9,13 +9,10 @@ class ProductTile extends StatelessWidget {
     required this.onPressed,
   });
 
-  /// 상품 정보
   final Product product;
 
-  /// 해당 상품이 카트에 담겨있는지 여부
   final bool isInCart;
 
-  /// 클릭 이벤트
   final void Function(Product product) onPressed;
 
   @override

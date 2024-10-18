@@ -67,44 +67,45 @@ class _HomePageState extends State<HomePage> {
               ),
               const Divider(height: 1),
               Expanded(
-                  child: FutureBuilder<QuerySnapshot>(
-                      future: bucketService.read(user.uid),
-                      builder: (context, snapshot) {
-                        final document = snapshot.data?.docs ?? [];
-                        if (document.isEmpty) {
-                          return const Center(
-                              child:
-                                  Text("Please write the bucket list"));
-                        }
-                        return ListView.builder(
-                          itemCount: document.length,
-                          itemBuilder: (context, index) {
-                            final doc = document[index];
-                            String job = doc['jop'];
-                            bool isDone = doc['isDone'];
-                            return ListTile(
-                              title: Text(
-                                job,
-                                style: TextStyle(
-                                    fontSize: 24,
-                                    color: isDone ? Colors.grey : Colors.black,
-                                    decoration: isDone
-                                        ? TextDecoration.lineThrough
-                                        : TextDecoration.none),
-                              ),
-                              trailing: IconButton(
-                                icon: const Icon(CupertinoIcons.delete),
-                                onPressed: () {
-                                  bucketService.delete(doc.id);
-                                },
-                              ),
-                              onTap: () {
-                                bucketService.update(doc.id, !isDone);
-                              },
-                            );
+                child: FutureBuilder<QuerySnapshot>(
+                  future: bucketService.read(user.uid),
+                  builder: (context, snapshot) {
+                    final document = snapshot.data?.docs ?? [];
+                    if (document.isEmpty) {
+                      return const Center(
+                          child: Text("Please write the bucket list"));
+                    }
+                    return ListView.builder(
+                      itemCount: document.length,
+                      itemBuilder: (context, index) {
+                        final doc = document[index];
+                        String job = doc['jop'];
+                        bool isDone = doc['isDone'];
+                        return ListTile(
+                          title: Text(
+                            job,
+                            style: TextStyle(
+                                fontSize: 24,
+                                color: isDone ? Colors.grey : Colors.black,
+                                decoration: isDone
+                                    ? TextDecoration.lineThrough
+                                    : TextDecoration.none),
+                          ),
+                          trailing: IconButton(
+                            icon: const Icon(CupertinoIcons.delete),
+                            onPressed: () {
+                              bucketService.delete(doc.id);
+                            },
+                          ),
+                          onTap: () {
+                            bucketService.update(doc.id, !isDone);
                           },
                         );
-                      }))
+                      },
+                    );
+                  },
+                ),
+              )
             ],
           ));
     });

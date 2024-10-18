@@ -1,29 +1,32 @@
+import 'package:code_tutoorial/7/apple_store/lib/3-provider/state/provider_cart.dart';
 import 'package:code_tutoorial/7/apple_store/lib/common/product.dart';
 import 'package:code_tutoorial/7/apple_store/lib/common/product_tile.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class Cart extends StatelessWidget {
   const Cart({
     super.key,
-    required this.cartProductList,
-    required this.onPressed,
   });
-
-  final List<Product> cartProductList;
-
-  /// 클릭 이벤트
-  final void Function(Product product) onPressed;
 
   @override
   Widget build(BuildContext context) {
+    List<Product> cartProductList = context.select<ProviderCart, List<Product>>(
+      (providerCart) => providerCart.cartProductList,
+    );
+
     return Scaffold(
       body: cartProductList.isEmpty
+
+          /// Empty
           ? const Center(
               child: Text(
                 "Empty",
                 style: TextStyle(fontSize: 24, color: Colors.grey),
               ),
             )
+
+          /// Not Empty
           : ListView.builder(
               itemCount: cartProductList.length,
               itemBuilder: (context, index) {
@@ -31,7 +34,7 @@ class Cart extends StatelessWidget {
                 return ProductTile(
                   product: product,
                   isInCart: true,
-                  onPressed: onPressed,
+                  onPressed: context.read<ProviderCart>().onProductPressed,
                 );
               },
             ),

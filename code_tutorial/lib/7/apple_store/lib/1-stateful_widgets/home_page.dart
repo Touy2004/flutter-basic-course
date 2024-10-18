@@ -12,13 +12,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  /// 현재 선택된 index
   int currentIndex = 0;
 
-  /// 카트에 담긴 상품 목록
   List<Product> cartProductList = [];
 
-  /// 상품 클릭
   void onProductPressed(Product product) {
     setState(() {
       if (cartProductList.contains(product)) {
